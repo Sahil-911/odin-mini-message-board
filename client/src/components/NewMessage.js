@@ -54,8 +54,8 @@ function NewMessage() {
                             />
                         </div>
                     </div>
-                    <div style={{ alignSelf: 'center', marginLeft: "10px" }}>
-                        <Button type="submit" variant="contained" color="primary">
+                    <div style={{ alignSelf: 'flex-end', marginLeft: "10px", marginBottom: '17px' }}>
+                        <Button type="submit" variant="contained" color="primary" sx={{ height: '40px' }}>
                             <SendIcon />
                         </Button>
                     </div>
