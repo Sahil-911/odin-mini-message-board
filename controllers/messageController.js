@@ -12,16 +12,20 @@ const messageController = {
     },
 
     createMessage: async (req, res) => {
+
         try {
             const newMessage = new Message({
-                user: req.body.name,
-                text: req.body.message,
+                user: req.body.user,
+                text: req.body.text,
                 added: req.body.added,
             });
             await newMessage.save();
-            res.json({ message: 'Message saved successfully' });
+
+            const messages = await Message.find().sort({ added: -1 });
+
+            res.status(200).json({ message: 'Message saved successfully', data: messages });
         } catch (error) {
-            console.log(error);
+            console.log(error.code);
             res.status(500).json({ message: 'There was a problem :(' });
         }
     },

@@ -7,13 +7,13 @@ const messageSchema = new Schema({
         required: true
     },
     user: {
-        type: Schema.Types.ObjectId,
-        ref: 'user'
+        type: String,
+        required: true,
     },
     added: {
         type: Date,
-        default: Date.now
-    }
+        default: Date.now,
+    },
 });
 
 const Message = mongoose.model('message', messageSchema);
