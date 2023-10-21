@@ -2,12 +2,13 @@
   "name": "odin-mini-message-board",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://sahil-911.github.io/odin-mini-message-board/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon app.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
   },
   "keywords": [],
   "author": "",
