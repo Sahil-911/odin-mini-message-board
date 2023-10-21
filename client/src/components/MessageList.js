@@ -7,7 +7,7 @@ function MessageList() {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/messages', {
+        fetch('https://odin-mini-message-board-api.onrender.com/api/messages', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

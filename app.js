@@ -23,7 +23,7 @@ mongoose
 });
 
 const corsOptions = {
-    origin: 'http://localhost:3000', // Replace with your front-end's URL
+    origin: 'https://odin-mini-message-board.vercel.app/', // Replace with your front-end's URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // If you need to send cookies or authentication headers
 };
