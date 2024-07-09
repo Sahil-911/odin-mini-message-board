@@ -29,7 +29,7 @@ function MessageList() {
             added: new Date(),
         };
 
-        const response = await fetch('http://localhost:5000/api/messages', {
+        const response = await fetch('https://odin-mini-message-board-api.onrender.com/api/messages', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
